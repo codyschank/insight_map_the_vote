@@ -6,17 +6,17 @@ The Jupyter Notebooks contained in this repo were developed for uploading and pr
 
 The processing should proceed in this order:
 
-1) Upload geographies: National zip code and congressional district shapefiles can be found here: https://www.census.gov/geo/maps-data/data/tiger.html. VTD (voter tabulation district) file for Texas can be found here: ftp://ftpgis1.tlc.state.tx.us/2011_Redistricting_Data/VTDs/Geography/.
+1) Upload geographies: National zip code and congressional district shapefiles (https://www.census.gov/geo/maps-data/data/tiger.html). VTD (voter tabulation district) file for Texas (ftp://ftpgis1.tlc.state.tx.us/2011_Redistricting_Data/VTDs/Geography/).
 
-2) Upload voter file: These files are not freely available, but can be obtained by working with political campaigns who have access to this data
+2) Upload voter file: These files are not freely available, but can be obtained by working with political campaigns who have access to this data.
 
-3) Upload open addresses: Available here https://openaddresses.io/
+3) Upload open addresses (https://openaddresses.io/)
 
-4) Joins, fuzzy matching, etc.
+4) Joins, fuzzy matching, etc.: requires an API key for SmartyStreets (https://smartystreets.com/).
 
-5) HDBSCAN
+5) HDBSCAN.
 
-6) Heat Map (optional, not currently on the web app)
+6) Heat Map (optional, not currently on the web app).
 
 
 Feel free to email me with any questions codyschank@gmail.com
