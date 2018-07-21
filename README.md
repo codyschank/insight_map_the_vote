@@ -20,3 +20,42 @@ The processing should proceed in this order:
 
 
 Feel free to email me with any questions codyschank@gmail.com
+
+
+## Installation
+
+### Using Conda environment:
+
+`conda create -n map_the_vote python=3.6.6`
+
+`source activate map_the_vote`
+
+### Install packages
+
+`pip install -r requirements.txt`
+
+Depending on the state of your system, you may also need to do one or more of the following:
+
+`brew install geos`
+
+`conda install cython`
+
+`conda install numpy scipy`
+
+`conda install scikit-learn`
+
+`conda install -c conda-forge hdbscan`
+
+### Install Docker Requirements
+
+`https://docs.docker.com/docker-for-mac/install/`
+
+`https://docs.docker.com/docker-for-windows/install/`
+
+Run `docker-compose up` in the `insight_map_the_vote` directory.
+
+
+### To update dependencies file, pipe the output of pip freeze to the requirements file
+
+`pip freeze > requirements.txt`
+
