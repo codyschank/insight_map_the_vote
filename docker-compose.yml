@@ -1,0 +1,8 @@
+postgis:
+  image: kartoza/postgis
+  ports:
+    - 5432:5432
+  environment:
+    - POSTGRES_USER=docker
+    - POSTGRES_PASS=docker
+    - POSTGRES_DBNAME=map_the_vote
