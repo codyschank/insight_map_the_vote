@@ -16,11 +16,12 @@ print(engine.url)
 if not database_exists(engine.url):
     print('Creating database')
     create_database(engine.url)
-    print('Creating PostGID extension')
-    sql_query = """
-    CREATE EXTENSION postgis;
-    """
-    engine.execute(sql_query)
+    # This is no longer necessary if we use the PostGIS docker container
+    # print('Creating PostGID extension')
+    # sql_query = """
+    # CREATE EXTENSION postgis;
+    # """
+    # engine.execute(sql_query)
 print(database_exists(engine.url))
 
 
